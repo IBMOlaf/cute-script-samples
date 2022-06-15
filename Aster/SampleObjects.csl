@@ -1,0 +1,16 @@
+//defining some classes/objects
+object SamplePersonObject {
+	Firstname 
+	Lastname
+	DateOfBirth
+	ShowNicknames
+	Gender
+	AddressLine1
+	AddressLine2
+	City
+}
+
+object SampleLoginObject {
+	user
+	pass
+} 

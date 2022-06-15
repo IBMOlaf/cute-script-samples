@@ -1,0 +1,15 @@
+define SamplePersonData_1 as SamplePersonObject {
+	Firstname = "@concat(Firstname;@random(10000-99999))"
+	Lastname = "@concat(Surname;@random(10000-99999))"
+	DateOfBirth = "@today(-1d-2M-20y)"
+	ShowNicknames = "Show Nicknames"
+	Gender = "Female"
+	AddressLine1 = "Streetname"
+	AddressLine2 = "something else"
+	City = "Helsinki"
+}
+
+define CaseworkerLoginData as SampleLoginObject {
+	user = "caseworker"
+	pass = "password"
+}

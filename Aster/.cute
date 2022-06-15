@@ -1,0 +1,8 @@
+# All files contained in this (script) folder will be transferred/copied into the target folder
+# Additionally all files contained in the 'resources' folder (if exists) will be transferred/copied into the target folder
+# Further files can be added by the 'includes' property (relative or absolute filenames)
+# The 'excludes' property refers to the 'resources' folder only (to exclude dedicated 'resources' files if necessary)
+
+
+includes=
+excludes=

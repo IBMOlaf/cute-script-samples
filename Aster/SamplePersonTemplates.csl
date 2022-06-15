@@ -1,0 +1,32 @@
+template SamplePersonTemplate using SamplePersonObject person {
+	textfield "First" set person.Firstname
+	textfield "Last" set person.Firstname
+	textfield "Birth" set person.DateOfBirth
+	checkbox set person.ShowNicknames
+	selectbox "Gender" set person.Gender
+	textfield "Line 1" set person.AddressLine1
+	textfield "Line 2" set person.AddressLine2
+	textfield "City" set person.City
+}
+
+template SamplePersonFurtherStuffTemplate {
+	button "Search"
+	button "Next"
+	selectbox "Language" set "Finnish"
+	comment "maybe some ore details..."
+	comment "and register the new person"
+	button "Save"
+}
+
+template SampleLoginTemplate using SampleLoginObject loginData {
+	textfield "User" set loginData.user
+	textfield "Pass" set loginData.pass
+	button "Login"
+}
+
+template SampleNavigationToPersonRegistration {
+	link "Cases and Outcomes"
+	link "Shortcuts"
+	link "Registration"
+	link "Person"
+}
