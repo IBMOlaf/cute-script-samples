@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testscript xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema CuTEScriptLanguage.xsd"
+    plugin-version="0830"
+    created="27 Jun 2022, 14:36:40 CEST"
+    user="olaf"
+    scriptname="ExcelSample"
+    resources="ExcelSample.properties, SampleExcelInput.xlsx"
+    input="sampledata/ExcelSample"
+    output="src-gen"
+    workspace="/Users/olaf/Documents/CuTE/CuTE-Development"
+    project="CúTE Development"
+    component="sampledata/ExcelSample">
+   <comment label="sample showing nested iteration of Excel data in the google search field"/>
+   <link label="http://google.com/?hl=en"/>
+   <repeat label="${ExcelInputSheet}"/>
+   <textfield label="Search">@concat(processing ;${ridx};. record: ${Who})</textfield>
+   <delay label="2000"/>
+   <textfield label="Search">@concat(${ridx};.); ;${Firstname})</textfield>
+   <delay label="2000"/>
+   <textfield label="Search">@concat(${ridx};.); ;${Lastname})</textfield>
+   <delay label="2000"/>
+   <textfield label="Search">@concat(${ridx};.); ;${DateOfBirth})</textfield>
+   <delay label="2000"/>
+   <textfield label="Search">@concat(${ridx};.); ;${Description})</textfield>
+   <delay label="4000"/>
+   <textfield label="Search">@concat(@time();: ;next record...)</textfield>
+   <delay label="1000"/>
+<until/>
+   <textfield label="Search">done</textfield>
+   <delay label="${delay}"/>
+</testscript>
